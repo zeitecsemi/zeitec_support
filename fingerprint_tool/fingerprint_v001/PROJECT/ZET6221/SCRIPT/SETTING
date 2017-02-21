@@ -1,0 +1,57 @@
+///===================================================
+/// PROJECT NAEM : SETTING
+/// FUNCTIONS : INITIAL THE MP
+/// AUTHOR: ryan
+/// BUILD DATE: 2013/04/10
+/// DESCRIPTIONS : 
+/// FOLDER PATH:
+///===================================================
+
+///===========================================================///
+/// I: Normal Setting
+///===========================================================///
+
+///-----------------------------------------------------------///
+/// 1.Setting DETAL SENSOR AND SHORT CIRCUIT log folder 
+///-----------------------------------------------------------///
+//  0 : print all DETAL sensor data to log folder  
+//	1 : not print all DETAL sensor data to log folder  
+EXPR V29 = 0
+
+///-----------------------------------------------------------///
+/// 2.Setting DETAL SENSOR TEST FILE PATH AND NAME
+///-----------------------------------------------------------///
+/// Min BOUND
+EXPR V30 = 29000
+
+/// Max BOUND
+EXPR V31 = 35000
+
+/// ABS
+EXPR V32 = 1000
+
+/// reverse Min BOUND
+EXPR V36 = 29000
+
+/// reverse Max BOUND
+EXPR V37 = 35000
+
+/// reverse ABS 
+EXPR V38 = 1000
+
+///-----------------------------------------------------------///
+/// 3.Setting FPC SHORT TEST
+///-----------------------------------------------------------///
+
+/// SENSOR MIN BOUND
+EXPR V20 = 20000
+
+/// SENSOR MAX BOUND
+EXPR V21 = 50000
+
+/// DRIVING MIN BOUND
+EXPR V22 = 20000
+
+/// DRIVING MAX BOUND
+EXPR V23 = 50000
+

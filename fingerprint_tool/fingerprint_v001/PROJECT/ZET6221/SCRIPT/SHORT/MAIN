@@ -1,0 +1,12 @@
+///===================================================
+/// PROJECT NAEM : DOWNLOAD 
+/// FUNCTIONS : DOWNLOAD FLASH
+/// AUTHOR: ryan
+/// BUILD DATE: 2013/04/10
+/// DESCRIPTIONS : 
+/// FOLDER PATH:
+///===================================================
+
+///=======1. DOWNLOAD THE FLASH============
+ERRSTOP ON
+FPCSHORT MIN(V40) MAX(V41) DMIN(V42) DMAX(V43) CNT(20) LOG(V29)

@@ -1,0 +1,13 @@
+///===================================================
+/// PROJECT NAEM : MP TEST 
+/// FUNCTIONS : KEY TEST
+/// AUTHOR: 
+/// BUILD DATE: 
+/// DESCRIPTIONS : 
+/// FOLDER PATH:
+///===================================================
+
+///=======1. KEY test============
+RST 
+DELAY 250
+KEYAD FILE(S[11]) SCR(S[10]) MIN(V76) MAX(V77) LOG(V29)  DISP(1)

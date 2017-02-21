@@ -1,0 +1,88 @@
+///===================================================
+/// PROJECT NAEM : GEN
+/// FUNCTIONS : 
+/// AUTHOR: JL
+/// BUILD DATE: 2013/04/10
+/// DESCRIPTIONS : 
+/// FOLDER PATH:
+///===================================================
+RUN INIT
+RUN SETTING
+
+
+
+///----------------------------------------///
+/// FLASH
+///----------------------------------------///
+//RST
+//DELAY 150
+//SETIC
+//MPSTR STEP1: Generate Flash
+//FLASHR FILE(OUT.BIN) ALL
+//MV OUT.BIN .\DOWNLOAD\OUT.BIN
+
+///----------------------------------------///
+/// SEARCH I2C ADDRESS
+///----------------------------------------///
+I2CFADR
+
+///----------------------------------------///
+/// INFO
+///----------------------------------------///
+RST
+DELAY 250
+MPSTR STEP2: Generate Information
+INFO
+SAVEBUF FILE(B2.BIN) SIZE(17) ADDR(0)
+MV B2.BIN .\INFO\B2.BIN
+
+
+///----------------------------------------///
+/// OPEN CIRCUIT
+///----------------------------------------///
+RST
+DELAY 250
+MPSTR STEP3: Generate Open circuit
+OPENC GEN(OPEN.TXT) SCR(S[6]) 
+MV OPEN.TXT .\OPEN\OPEN.TXT
+
+
+///----------------------------------------///
+/// ITO3
+///----------------------------------------///
+RST
+DELAY 250
+MPSTR STEP4: Generate PN detal sensor 
+ITO3 GEN(ITO3.TXT) SCR(S[5])  MIN(V30) MAX(V31) REVMIN(V36) REVMAX(V37) DELTA(V32) ERRCNT(V38) BYPASS(V50) NOB2
+MV ITO3.TXT .\ITO3\ITO3.TXT
+RST
+DELAY 50
+
+///----------------------------------------///
+/// KEY
+///----------------------------------------///
+RST
+DELAY 250
+MPSTR STEP5: Generate Key AD Pattern
+KEYAD GEN(KEYAD.TXT) SCR(S[7])  MIN(V76) MAX(V77) 
+MV KEYAD.TXT .\KEY\KEYAD.TXT
+RST
+DELAY 50
+
+
+///----------------------------------------///
+/// ITO3 2nd
+///----------------------------------------///
+RST
+DELAY 250
+MPSTR STEP6: Generate 2nd PN detal sensor 
+ITO3 GEN(ITO3.TXT) SCR(S[9]) MIN(V80) MAX(V81) REVMIN(V86) REVMAX(V87) DELTA(V82) ERRCNT(V88) BYPASS(V50) NOB2
+MV ITO3.TXT .\ITO3_2nd\ITO3.TXT
+RST
+DELAY 50
+
+
+
+
+
+MPSTR Generate Sample Pass

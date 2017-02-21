@@ -1,0 +1,144 @@
+///===================================================
+/// PROJECT NAEM : SETTING
+/// FUNCTIONS : INITIAL THE MP
+/// AUTHOR: ryan
+/// BUILD DATE: 2013/04/10
+/// DESCRIPTIONS : 
+/// FOLDER PATH:
+///===================================================
+
+///===========================================================///
+/// I: Normal Setting
+///===========================================================///
+
+///-----------------------------------------------------------///
+/// 1.Setting ito sensor log folder 
+///-----------------------------------------------------------///
+//  0 : print all ITO sensor data to log folder  
+//	1 : not print all ITO sensor data to log folder  
+EXPR V29 = 0
+
+///-----------------------------------------------------------///
+/// 2.Setting ITO3 FILE PATH AND NAME (ZETouch ICON="O")
+///-----------------------------------------------------------///
+/// Min BOUND // 正向下限值
+EXPR V30 = 0.8
+
+/// Max BOUND //正向上限值
+EXPR V31 = 1.4
+
+/// reverse Min bound //反向下限值
+EXPR V36 = 0.8
+
+/// reverse Max bound //反向上限值
+EXPR V37 = 1.4
+
+/// delta ratio setting value //差值
+EXPR V32 = 0.2
+
+/// Fault Tolerance point count  //容許誤差點個數
+EXPR V38 = 0
+
+
+/// only the ZET6231 can used  //反向不測試
+/// 0 : scan the reverse ITO3 sensor data
+/// 1 : bypass the scan the reverse ITO3 sensor data
+EXPR V50 = 0    
+
+
+
+///---------------------------------------///
+/// Gen Golden Sample parameters
+///---------------------------------------///
+/// GAIN for un-perfect points
+EXPR V33 = 10.0
+
+/// A Golden Sample shall have 90% perfect points
+EXPR V34 = 50
+
+/// A Golden Sample shall have less 40 un-perfect points
+EXPR V35 = 100
+
+
+
+///-----------------------------------------------------------///
+/// 3.Setting FPC SHORT TEST (ZETouch ICON="R")
+///-----------------------------------------------------------///
+
+/// SENSOR MIN BOUND //感應軸下限值
+EXPR V20 = 1000
+
+/// SENSOR MAX BOUND //感應軸上限值
+EXPR V21 = 3000
+
+/// DRIVING MIN BOUND //驅動軸下限值
+EXPR V22 = 1000
+
+/// DRIVING MAX BOUND //驅動軸上限值
+EXPR V23 = 3000
+
+
+///-----------------------------------------------------------///
+/// 4.Setting Open2 circuit TEST (ZETouch ICON="N")
+///-----------------------------------------------------------///
+///  MIN BOUND  //下限值
+EXPR V61 = 0.5
+
+///  MAX BOUND //上限值
+EXPR V62 = 3.5
+
+
+///-----------------------------------------------------------///
+/// 5.Setting ITO FILE PATH AND NAME (ZETouch ICON="I")
+///-----------------------------------------------------------///
+/// Min BOUND // 正向下限值
+EXPR V70 = 2000
+
+/// Max BOUND //正向上限值
+EXPR V71 = 6000
+
+/// reverse Min bound //反向下限值
+EXPR V72 = 2000
+
+/// reverse Max bound //反向上限值
+EXPR V73 =5000
+
+/// delta ratio setting value //正向差值(ABS)
+EXPR V74 = 2000
+
+/// Fault Tolerance point count  //反向差值(ABS)
+EXPR V75 = 2000
+
+
+
+///-----------------------------------------------------------///
+/// 6.Setting 2nd ITO3 FILE PATH AND NAME (ZETouch ICON="O")
+///-----------------------------------------------------------///
+/// Min BOUND // 正向下限值
+EXPR V80 = 0.7
+
+/// Max BOUND //正向上限值
+EXPR V81 = 1.6
+
+/// reverse Min bound //反向下限值
+EXPR V86 = 0.7
+
+/// reverse Max bound //反向上限值
+EXPR V87 = 1.6
+
+/// delta ratio setting value //差值
+EXPR V82 = 0.2
+
+/// Fault Tolerance point count  //容許誤差點個數
+EXPR V88 = 0
+
+
+
+ ///-----------------------------------------------------------///
+/// 7.Setting Key TEST (ZETouch ICON="E")
+///-----------------------------------------------------------///
+///  MIN BOUND  //下限值
+EXPR V76 = 0.8
+
+///  MAX BOUND //上限值
+EXPR V77 = 1.2
